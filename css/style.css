@@ -1,0 +1,127 @@
+body {
+    height: 100%;
+    background-color: #fff;
+}
+
+p {
+    margin: 0;
+}
+
+p.light {
+    color: #979fa8; 
+}
+
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+h6 {
+    color: #979fa8;
+    margin: 0;
+    padding: 0;
+}
+
+.heightfull {
+    height: 100vh;
+    overflow: auto;
+}
+
+.highlight {
+    min-height: 200px;
+    background-color: lightblue;
+    border: 1px solid #000;
+}
+
+.tempborder {
+    border: 1px dashed #000;
+}
+
+.flexparent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.toptoolbar {
+    height: 50px;
+    background-color: cornflowerblue;
+}
+
+.canvas {
+    flex: 1;
+    overflow: auto;
+}
+
+.brushtoolbar {
+    height: 100%;
+    max-width: 50px;
+    background-color: lightgray;
+}
+.topbar {
+    flex: 3;
+}
+
+.settingstoolbar {
+    max-width: 320px;
+    background-color: lightgray;
+}  
+
+.brushsettings {
+    height: 25%;
+}
+
+.colorsettings {
+    height: 25%;
+}
+
+.chatbox {
+    height: 50%;
+}
+
+.box {
+    flex: 1;
+    overflow: auto; 
+    background-color: lightgray;
+}
+
+.chatinput {
+    background-color: #fff;
+}
+
+.settings li{
+    padding: 2px;
+    border: 1px solid #000;
+    margin-top: 2px;
+}
+
+.icons li {
+    margin-bottom: 10px;
+    width: 35px;
+    height: 35px;
+    border: 1px dotted #404447;
+}
+
+.borderleft {
+    border-left: 1px dashed #525b66;
+}
+.borderright {
+    border-right: 1px dashed #525b66;
+}
+.borderbottom {
+    border-bottom: 1px dashed #525b66;
+}
+.bordertop {
+    border-top: 1px dashed #525b66;
+}
+
+.bgcolor {
+    background-color: lightgray;
+}
+.sidebarcolor{
+    background-color: #292f36;
+    background: repeating-linear-gradient(-45deg, transparent, transparent 12px, rgba(48,55,64,.2) 12px, rgba(48,55,64,.2) 24px),
+                radial-gradient(90% 150px at top right, #254e6a, transparent),
+                radial-gradient(90% 150px at bottom left, #254e6a, #283743);
+    border: 1px dashed #2d5e80;
+}
