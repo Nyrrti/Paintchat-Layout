@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"> 
+    <link href="css/slider.css" rel="stylesheet">
   
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -76,18 +77,61 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <ul class="nav flex-column settings">
-                                <li class="small"><p class="light">Hardness <input type="range" min="0" max="50" value="25" step="5" /></p></li>
-                                <li class="small">Size <input type="range" min="0" max="50" value="25" step="5" /></li>
-                                <li class="small">Opacity</li>
-                                <li class="small">Spacing</li>
-                                <li class="small">Grain</li>
-                                <li class="small">Scatter</li>
-                            </ul>
+                            <div class="row align-items-center sliderbar">
+                                <div class="col-3">
+                                    <p class="small settings">Hardness:</p>
+                                </div>
+                                <div class="col-9">
+                                    <input type="range" class="slider" min="0" max="50" value="25" step="5" />
+                                </div>
+                            </div>
+                             <div class="row align-items-center sliderbar">
+                                <div class="col-3">
+                                    <p class="small settings">Size:</p>
+                                </div>
+                                <div class="col-9">
+                                    <input type="range" class="slider" min="0" max="50" value="25" step="5" />
+                                </div>
+                            </div>
+                             <div class="row align-items-center sliderbar">
+                                <div class="col-3">
+                                    <p class="small settings">Opacity:</p>
+                                </div>
+                                <div class="col-9">
+                                    <input type="range" class="slider" min="0" max="50" value="25" step="5" />
+                                </div>
+                            </div>
+                             <div class="row align-items-center sliderbar">
+                                <div class="col-3">
+                                    <p class="small settings">Spacing:</p>
+                                </div>
+                                <div class="col-9">
+                                    <input type="range" class="slider" min="0" max="50" value="25" step="5" />
+                                </div>
+                            </div>
+                             <div class="row align-items-center sliderbar">
+                                <div class="col-3">
+                                    <p class="small settings">Grain:</p>
+                                </div>
+                                <div class="col-9">
+                                    <input type="range" class="slider" min="0" max="50" value="25" step="5" />
+                                </div>
+                            </div>
+                             <div class="row align-items-center sliderbar">
+                                <div class="col-3">
+                                    <p class="small settings">Scatter:</p>
+                                </div>
+                                <div class="col-9">
+                                    <input type="range" class="slider" min="0" max="50" value="25" step="5" />
+                                </div>
+                            </div>
+                        
                         </div>
                     </div>
                 </div>
-                <div class="col-12 colorsettings">Color</div>
+                <div class="col-12 colorsettings">Color
+               
+                </div>
                 <div class="col-12 chatbox bgcolor">
                     <div class="col-12 flexparent p-0">
                         <div class="col-12 box">Box</div>    
@@ -119,7 +163,7 @@
         
 
          <script>
-              
+             
         </script>  
       
   </body>

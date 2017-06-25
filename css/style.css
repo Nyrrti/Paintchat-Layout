@@ -7,6 +7,10 @@ p {
     margin: 0;
 }
 
+p.settings {
+    pointer-events: none;
+}
+
 p.light {
     color: #979fa8; 
 }
@@ -56,7 +60,7 @@ h6 {
 .brushtoolbar {
     height: 100%;
     max-width: 50px;
-    background-color: lightgray;
+    background-color: darkgray;
 }
 .topbar {
     flex: 3;
@@ -64,7 +68,7 @@ h6 {
 
 .settingstoolbar {
     max-width: 320px;
-    background-color: lightgray;
+    background-color: darkgray;
 }  
 
 .brushsettings {
@@ -124,4 +128,8 @@ h6 {
                 radial-gradient(90% 150px at top right, #254e6a, transparent),
                 radial-gradient(90% 150px at bottom left, #254e6a, #283743);
     border: 1px dashed #2d5e80;
+}
+
+.sliderbar {
+    padding: 2px 0 2px 0;
 }
