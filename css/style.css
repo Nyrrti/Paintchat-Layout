@@ -67,20 +67,23 @@ h6 {
 }
 
 .settingstoolbar {
-    max-width: 320px;
+    max-width: 300px;
     background-color: darkgray;
 }  
 
 .brushsettings {
-    height: 25%;
+    height: 30%;
+    background-color: brown;
 }
 
 .colorsettings {
-    height: 25%;
+     height: 20%;
+    background-color: orange; 
 }
 
 .chatbox {
     height: 50%;
+    background-color: green;
 }
 
 .box {
@@ -105,7 +108,9 @@ h6 {
     height: 35px;
     border: 1px dotted #404447;
 }
-
+.btn-primary {
+    border-radius: 0px;
+}
 .borderleft {
     border-left: 1px dashed #525b66;
 }

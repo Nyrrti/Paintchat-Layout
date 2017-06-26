@@ -11,6 +11,7 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"> 
     <link href="css/slider.css" rel="stylesheet">
+    <link href="css/jquery.minicolors.css" rel="stylesheet">
   
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -63,9 +64,10 @@
             </div>
             
             <!-- START OF RIGHT COLUMN/BRUSH SETTINGS -->
-            <div class="col-3 settingstoolbar borderleft  p-0">
-                <div class="col-12 brushsettings">
-                    <div class="col-12">
+            <div class="col-3 settingstoolbar borderleft p-0">
+                 <!--BRUSH SETTINGS -->
+                <div class="col-12 brushsettings ">
+                         <div class="col-12">
                         <div class="row">
                             <div class="col-8">
                                 <h6 class="py-2">Brush Settings</h6>
@@ -127,12 +129,14 @@
                             </div>
                         
                         </div>
-                    </div>
+                    </div> 
                 </div>
-                <div class="col-12 colorsettings">Color
-               
+                <!--COLOR SETTINGS -->
+                <div class="col-12 colorsettings">
+                    <div class="col-12 colorholder"></div>
                 </div>
-                <div class="col-12 chatbox bgcolor">
+                <!--CHAT SETTINGS -->
+                <div class="col-12 chatbox">
                     <div class="col-12 flexparent p-0">
                         <div class="col-12 box">Box</div>    
                         <div class="row chatinput">
@@ -160,10 +164,20 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/bootstrap/js/bootstrap.min.js"></script>
     <script src="scripts/jquery-3.1.1.js"></script>
+    <script src="scripts/jquery.minicolors.js"></script>
         
 
          <script>
-             
+           $( document ).ready(function() {
+                console.log("Loading");
+      
+       
+            $(".colorholder").minicolors({
+            mouseup: function(value, opacity) {
+            console.log(value + ' - ' + opacity);
+                }
+        });
+              });
         </script>  
       
   </body>
